@@ -1,48 +1,24 @@
-/* 
-   W3Schools. (2024). JavaScript Form Validation. 
-   Retrieved from https://www.w3schools.com/js/js_validation.asp
-*/
-
+/* Adapted from: W3Schools (2024). JS Form Validation. */
 document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.getElementById('bookingForm');
 
     if (contactForm) {
-        contactForm.addEventListener('submit', function(event) {
-            
-            event.preventDefault();
+        contactForm.addEventListener('submit', (event) => {
+            event.preventDefault(); 
 
-            
-            const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const message = document.getElementById('message').value.trim();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
 
             
             if (name.length < 2) {
-                alert("Please enter a valid name (at least 2 characters).");
+                alert("Please enter a valid name.");
                 return;
             }
 
-            if (!validateEmail(email)) {
-                alert("Please enter a valid email address.");
-                return;
-            }
-
-            if (message.length < 10) {
-                alert("Please tell us a bit more about your inquiry (min 10 characters).");
-                return;
-            }
-
-           
-            alert(`Thank you, ${name}! Your inquiry regarding Al Bahr has been sent successfully.`);
-            
-            
+          
+            alert(`Thank you, ${name}! Your inquiry about Al Bahr has been received.`);
             contactForm.reset();
         });
     }
 });
-
-
-function validateEmail(email) {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(email);
-}

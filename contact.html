@@ -1,46 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Al Bahr</title>
-    <link rel="stylesheet" href="root/style.css">
-</head>
-<body>
-    <header>
-        <div class="logo-container">
-            <img src="images/logo.png" alt="Al Bahr Logo" class="site-logo">
-            <span class="logo-text">Al Bahr</span>
-        </div>
-        <nav><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="contact.html" class="active">Contact</a></li></ul></nav>
-    </header>
+<main class="grid-container">
+    <section class="contact-form">
+        <h2>Get in Touch</h2>
+        <form id="bookingForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="email@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Inquiry</label>
+                <textarea id="message" placeholder="How can we help you?" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit Inquiry</button>
+        </form>
+    </section>
 
-    <main class="grid-container">
-        <section class="contact-form">
-            <h2>Get in Touch</h2>
-            <form id="bookingForm" onsubmit="return validateForm(event)">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" required>
-                </div>
-                <button type="submit" class="submit-btn">Submit Inquiry</button>
-            </form>
-        </section>
+    <section class="map-section">
+        <h3>Our Location</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14431.144173874744!2d51.6033486!3d25.2946271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45d978a3f8789b%3A0x7e7041a8848b29c9!2sBanana%20Island%20Resort%20Doha%20by%20Anantara!5e0!3m2!1sen!2sqa!4v1700000000000!5m2!1sen!2sqa"
+                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <p class="citation">Map Data: Google. (2026). <em>Banana Island Location</em>.</p>
+        <figure>
+            <img src="images/contact1.jpg" alt="Al Bahr Front desk reception">
+            <figcaption>Figure 5: The Welcome Lobby (Microsoft, 2026).</figcaption>
+        </figure>
+    </section>
+</main>
 
-        <section class="map-section">
-            <h3>Our Location</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="250" style="border:0;" allowfullscreen=""></iframe>
-            <p class="citation">Map Data: Google. (2026). [Banana Island Location].</p>
-            <figure>
-                <img src="images/contact1.jpg" alt="Front desk">
-                <figcaption>Figure 5: The Welcome Lobby</figcaption>
-            </figure>
-        </section>
-    </main>
-    <script src="root/script.js"></script>
-</body>
-</html>
+<script src="root/script.js"></script>
