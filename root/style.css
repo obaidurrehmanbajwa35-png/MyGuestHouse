@@ -1,13 +1,13 @@
 
+
 :root {
-    --teal: #006666; 
-    --gold: #C5A059; 
+    --teal: #006666;
+    --gold: #C5A059;
     --gold-dark: #a3844a;
     --white: #ffffff;
     --bg-light: #fcfcfc;
     --text: #333333;
 }
-
 
 * {
     margin: 0;
@@ -20,9 +20,8 @@ body {
     line-height: 1.6;
     color: var(--text);
     background-color: var(--bg-light);
-    text-align: center; 
+    text-align: center;
 }
-
 
 header {
     background-color: var(--teal);
@@ -67,22 +66,19 @@ nav a {
         border-bottom: 2px solid var(--gold);
     }
 
-
 main {
     max-width: 1100px;
     margin: 40px auto;
     padding: 0 20px;
 }
 
-
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    text-align: left; 
+    text-align: left;
     align-items: start;
 }
-
 
 .home-hero-image img {
     width: 100%;
@@ -103,7 +99,6 @@ main {
     font-weight: bold;
 }
 
-
 .gallery-grid {
     display: flex;
     flex-direction: column;
@@ -121,7 +116,6 @@ figcaption {
     font-style: italic;
     margin-top: 5px;
 }
-
 
 .contact-form {
     background: var(--white);
@@ -148,9 +142,8 @@ input, textarea {
     font-family: inherit;
 }
 
-
 .cta-btn-gold, .submit-btn {
-    background-color: var(--gold) !important; 
+    background-color: var(--gold) !important;
     color: var(--white) !important;
     padding: 18px 50px;
     font-size: 1.2rem;
@@ -169,7 +162,6 @@ input, textarea {
         transform: translateY(-3px);
     }
 
-
 footer {
     padding: 40px 0;
     margin-top: 50px;
@@ -177,22 +169,29 @@ footer {
     background: #f1f1f1;
 }
 
-
 @media (max-width: 768px) {
     header {
         flex-direction: column;
         gap: 15px;
+        padding: 20px;
+    }
+
+   
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
     }
 
     .grid-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; 
     }
 
     .explore-line {
         font-size: 1.2rem;
     }
 
-    .cta-btn-gold {
+    .cta-btn-gold, .submit-btn {
         width: 100%;
         padding: 15px;
     }
