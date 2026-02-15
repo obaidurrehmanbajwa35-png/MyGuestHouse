@@ -114,25 +114,29 @@ nav a {
 
 
 .cta-btn-gold {
-    appearance: none; 
-    background-color: #C5A059; 
-    color: #ffffff; 
-    padding: 15px 40px;
-    font-size: 1.2rem;
-    font-weight: bold;
+    appearance: none !important;
+    -webkit-appearance: none;
+    border: none !important;
+    outline: none;
+    background-color: #C5A059 !important; 
+    color: #ffffff !important; 
+    padding: 15px 40px !important;
+    font-size: 1.2rem !important;
+    font-weight: bold !important;
     text-transform: uppercase;
-    border: none; 
-    border-radius: 5px; 
+    border-radius: 5px !important;
     cursor: pointer;
+    display: inline-block !important;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(197, 160, 89, 0.4);
     transition: 0.3s ease;
-    display: inline-block;
 }
 
     .cta-btn-gold:hover {
-        background-color: #006666; 
+        background-color: #006666 !important; 
         transform: translateY(-2px);
     }
-
 .story-block h1 {
     font-size: 2.5rem;
     color: var(--primary-teal);
