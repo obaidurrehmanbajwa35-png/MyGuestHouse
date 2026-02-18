@@ -1,12 +1,10 @@
-
-
 :root {
-    --teal: #006666;
-    --gold: #C5A059;
-    --gold-dark: #a3844a;
+    --teal: #005a5a;
+    --gold: #8b6b2d;
+    --gold-bright: #C5A059;
     --white: #ffffff;
     --bg-light: #fcfcfc;
-    --text: #333333;
+    --text: #222222; 
 }
 
 * {
@@ -59,11 +57,13 @@ nav a {
     text-decoration: none;
     padding: 5px 10px;
     transition: 0.3s;
+    font-weight: 500;
 }
 
+
     nav a:hover, nav a.active {
-        color: var(--gold);
-        border-bottom: 2px solid var(--gold);
+        color: #ffd88a;
+        border-bottom: 2px solid #ffd88a;
     }
 
 main {
@@ -71,6 +71,7 @@ main {
     margin: 40px auto;
     padding: 0 20px;
 }
+
 
 .grid-container {
     display: grid;
@@ -86,17 +87,15 @@ main {
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
-.action-section {
-    padding: 60px 20px;
-}
 
-.explore-line {
-    font-size: 1.5rem;
+h1.explore-line {
+    font-size: 1.8rem;
     color: var(--teal);
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     margin-bottom: 30px;
     font-weight: bold;
+    line-height: 1.2;
 }
 
 .gallery-grid {
@@ -111,8 +110,8 @@ main {
 }
 
 figcaption {
-    font-size: 0.8rem;
-    color: #666;
+    font-size: 0.9rem;
+    color: #444444;
     font-style: italic;
     margin-top: 5px;
 }
@@ -142,6 +141,7 @@ input, textarea {
     font-family: inherit;
 }
 
+
 .cta-btn-gold, .submit-btn {
     background-color: var(--gold) !important;
     color: var(--white) !important;
@@ -152,22 +152,24 @@ input, textarea {
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(197, 160, 89, 0.4);
+    box-shadow: 0 4px 15px rgba(139, 107, 45, 0.3);
     transition: 0.3s;
     display: inline-block;
 }
 
     .cta-btn-gold:hover, .submit-btn:hover {
-        background-color: var(--teal) !important;
+        background-color: #004444 !important; 
         transform: translateY(-3px);
     }
 
 footer {
     padding: 40px 0;
     margin-top: 50px;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #ddd;
     background: #f1f1f1;
+    color: #333333;
 }
+
 
 @media (max-width: 768px) {
     header {
@@ -176,7 +178,6 @@ footer {
         padding: 20px;
     }
 
-   
     nav ul {
         flex-direction: column;
         gap: 10px;
@@ -184,11 +185,7 @@ footer {
     }
 
     .grid-container {
-        grid-template-columns: 1fr; 
-    }
-
-    .explore-line {
-        font-size: 1.2rem;
+        grid-template-columns: 1fr;
     }
 
     .cta-btn-gold, .submit-btn {
